@@ -22,29 +22,56 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: CEO
-    company: GenCoin
-    company_url: ''
-    company_logo: org-gc
-    location: California
-    date_start: '2021-01-01'
+  - title: Internship
+    company: Athena Experts
+    company_url: 'https://www.athena-experts.com/index.php/en/home/'
+    location: Tunisia
+    date_start: '2020-07-07'
+    date_end: '2020-09-09'
+    description: |2-
+        Responsibilities include:
+        
+        * Developing a penetration testing platform
+        * Setting up Linux machines for penetration testing
+        * Deploying the platform and the machines
+        
+  - title: Technical manager
+    company: Securinets
+    company_url: 'https://securinets.com/'
+    location: Tunisia
+    date_start: '2019-09-09'
     date_end: ''
     description: |2-
         Responsibilities include:
         
-        * Analysing
-        * Modelling
-        * Deploying
-        
-  - title: Professor of Semiconductor Physics
-    company: University X
-    company_url: ''
-    company_logo: org-x
-    location: California
-    date_start: '2016-01-01'
-    date_end: '2020-12-31'
-    description: Taught electronic engineering and researched semiconductor physics.
+        * Participating in CTF organization including task making
+        * and setting up the infrastructure for the CTFs
+        * Supervising a network security workshop where we built network attacks tool
+        * Supervising a Mobile reverse engineering workshop
 
-design:
-  columns: '2'
+  - title: CTF Player
+    company: Fword
+    company_url: 'https://twitter.com/fwordteam?lang=en'
+    location: Tunisia
+    date_start: '2018-12-12'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+
+        * Reverse Engineering Player
+
+  - title: Media manager
+    company: Securinets
+    company_url: 'https://securinets.com/'
+    location: Tunisia
+    date_start: '2020-09-09'
+    date_end: ''
+    description: |2-
+        Responsibilities include:
+        
+        * Mediatisation of the association activities
+        * Managing Securinets social media including a Facebook page with more than 13K followers
+        * Publishing Cyber Security news articles
+        
+        
 ---
