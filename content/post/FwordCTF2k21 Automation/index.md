@@ -48,10 +48,10 @@ Note: this article is for documentation purposes and all the links will be below
 
 ### Summury
 
-[1- Tasks Health check](##1)
-[2- Discord Bot](##2)
-[3- Certificates script](##3)
-[4- Conclusion](##4)
+[1- Tasks Health check](##1)\
+[2- Discord Bot](##2)\
+[3- Certificates script](##3)\
+[4- Conclusion](##4)\
 
 # <a name="1"></a> 
 ## Tasks-health-check
