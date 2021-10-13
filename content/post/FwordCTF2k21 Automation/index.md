@@ -36,8 +36,6 @@ tags:
 categories:
 - Scripts
 ---
-
-# FwordCTF2k21 Automation scripts
   
 
 ## Introduction
