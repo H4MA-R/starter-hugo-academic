@@ -315,3 +315,7 @@ The code attache the certificate and fill the placeholders thens end it using se
 I know these are simple scripts but it helped us manage the CTF and made it a lot easier than doing all these tasks manually, these script had a lot of issues like for the bot if anything happens the data will be lost and it will starts the first blood from he brggind and also the health check can have a lot of flase alerts s for net year edition we set the goal to combine all these tasks in one bot that it will manage everything from the beginning of the CTF with no human interaction it will be more optimized and it will help us focus more interacting with the participants and doing more challenges.
 
 In the next article, we will break down the main infrastructure and all its components and we will talk in detail about all the challenges and problems we faced and the solution we went with.
+
+###Links:
+CSICTF bot: https://medium.com/csictf/kuwu-a-discord-utility-bot-for-ctf-s-5727ea5a6019
+All the source code: https://github.com/H4MA-A/FwordCTF
