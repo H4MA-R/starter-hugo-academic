@@ -316,6 +316,6 @@ I know these are simple scripts but it helped us manage the CTF and made it a lo
 
 In the next article, we will break down the main infrastructure and all its components and we will talk in detail about all the challenges and problems we faced and the solution we went with.
 
-### Links: \
+### Links: 
 CSICTF bot: https://medium.com/csictf/kuwu-a-discord-utility-bot-for-ctf-s-5727ea5a6019 \
 All the source code: https://github.com/H4MA-A/FwordCTF
