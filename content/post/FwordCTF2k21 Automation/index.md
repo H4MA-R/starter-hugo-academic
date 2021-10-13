@@ -66,6 +66,7 @@ the JSON file:
 The alert message will be this form:\
 \
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/1.png?raw=true)
+\
 the scripts start by checking the task's type and according to that it will either try to send a request and wait for the correct response if it is a web task or it will try to connect with pwn tools if it's a service the if there is no response it will send the message above to Discord It contains the task name and category and the server and port that it's running on.
 
 # <a name="2"></a> 
