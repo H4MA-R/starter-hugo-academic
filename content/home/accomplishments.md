@@ -19,6 +19,22 @@ item:
     organization_url: null
     title: Ranked among the top 60 teams in the world in CTFs (2019 - 2020)
     url: https://ctftime.org/team/72251
+  - certificate_url: null
+    date_end: 2021-03-15
+    date_start: 2020-03-15
+    description: null
+    organization: CSI ENSI
+    organization_url: null
+    title: HackZone 9th edition CTF winners
+    url: ""
+  - certificate_url: null
+    date_end: 2021-04-22
+    date_start: 2020-04-22
+    description: 1st place Fword team
+    organization: Securinets
+    organization_url: null
+    title: Securiday 2021 winner
+    url: ""
 widget_id: accomplishments
 headless: true
 weight: 50
