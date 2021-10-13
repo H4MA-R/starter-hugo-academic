@@ -83,5 +83,4 @@ experience:
         Responsibilities include:
         
         * Pentesting web/mobile applications
-        
 ---
