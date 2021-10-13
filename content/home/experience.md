@@ -72,15 +72,4 @@ experience:
         * Mediatisation of the association activities
         * Managing Securinets social media including a Facebook page with more than 13K followers
         * Publishing Cyber Security news articles
-        
-  - title: Freelancer
-    company: Upwork
-    company_url: 'https://www.upwork.com/freelancers/~01c1750b9a68c701ab'
-    location: ''
-    date_start: '2020-09-1'
-    date_end: ''
-    description: |2-
-        Responsibilities include:
-        
-        * Pentesting web/mobile applications
 ---
