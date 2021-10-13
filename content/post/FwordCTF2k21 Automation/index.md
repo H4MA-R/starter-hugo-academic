@@ -52,6 +52,7 @@ Note: this article is for documentation purposes and all the links will be below
 [2- Discord Bot](##2)
 [3- Certificates script](##3)
 [4- Conclusion](##4)
+
 # <a name="1"></a> 
 ## Tasks-health-check
 So for the health checks and server monitoring, we used newRelic mainly and it was very helpful and it saved us many times but we wanted something that notifies us in discord since all the admins were mostly active in there so I wrote a simple script that when a task is down it will automatically send a message pinging all the admin with information about which task had problems
@@ -59,7 +60,7 @@ So for the health checks and server monitoring, we used newRelic mainly and it w
 the script takes a JSON file with a certain structure for every task and tests the task status depending on the task's category.
 
 the JSON file:
-
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/Untitled.png?raw=true)
 
 The alert message will be this form:
@@ -68,16 +69,19 @@ the scripts start by checking the task's type and according to that it will eith
 
 # <a name="2"></a> 
 ## Discord Bot
-
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/Fbot.png?raw=true)
 
 Now for the discord bot, we wanted it to do two main tasks which are giving the welcome flag to the participants and announcing all the first blood. the first task was pretty much straight forward I just used the discord bot library. the bot has basics commands like help and ping to test the latency and of course the flag command to give the flags for the participants.
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/flag1.png?raw=true)
 
 It listens for a private message and if it finds the word flag it will send it.
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/flag2.png?raw=true)
 
 For the second task, I found a lot of solutions but the easiest for me at least was to use selenium to scrape the data needed for the first blood. the bot at first start with collecting all the tasks names when lunched and then every 3 minutes it checks for first blood if there is one marks the task as solved and sends a message to the discord server containing the team that had the first blood and the task name:
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/firstblood.png?raw=true)
 
 btw credit to the CSICTF admin for his amazing article it helped me a lot(link below)
@@ -87,9 +91,11 @@ In this year edition, we had more than 1000 participants and more than 400 teams
 
 So to generate the certificates a started with a template done by our talented designer Aptx and I used pillow library in python to put the team name, points, and ranking and the result was a pdf containing the certificate that will be attached to the email.
 **Template**
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/cet1.png?raw=true)
 
 **Result**
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/cert2.png?raw=true)
 
 Now for the emails, I opted to use Sendgrid because I was most familiar with it and I worked with it before in the FwordCTF first edition
@@ -97,11 +103,13 @@ Now for the emails, I opted to use Sendgrid because I was most familiar with it 
 for those who don't know it Sendgrid is a platform used mainly for email marketing you can customize the emails and use the API key to use it in an automation script.
 
 here are some stats about the emails we sent during the period of FwordCTF
-
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/sendgrid.png?raw=true)
 
 For the emails template, we used one for the invitation before the CTF and one for sending the certificates.
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/mailtemplate.png?raw=true)
+<br/>
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/mail.png?raw=true)
 # <a name="4"></a> 
 ## Conclusion
