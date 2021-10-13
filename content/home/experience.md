@@ -73,7 +73,7 @@ experience:
         * Managing Securinets social media including a Facebook page with more than 13K followers
         * Publishing Cyber Security news articles
         
- - title: Freelancer
+  - title: Freelancer
     company: Upwork
     company_url: 'https://www.upwork.com/freelancers/~01c1750b9a68c701ab'
     location: ''
