@@ -84,7 +84,7 @@ def check(task):
 	elif task["type"] == "service":
 		try:
 			r = remote(task["server"],task["port"])
-			r.send(task["int"])
+			r.send(task["in"])
 			data = r.recv()
 			if data in task["out"]:
 				return 1
