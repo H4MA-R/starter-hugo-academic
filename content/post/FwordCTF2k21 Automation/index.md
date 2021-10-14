@@ -221,9 +221,6 @@ async def firstBlood():
             continue
 
         if(y['data']==[]):
-            continue
-
-        if(y['data']==[]):
             print(f'no data for {ch[i]}')
             continue
 
