@@ -54,8 +54,7 @@ Note: this article is for documentation purposes and all the links will be below
 
 # <a name="1"></a> 
 ## Tasks-health-check
-Last year we had a major problem, we didnt have any way to get notified if a task or the platfor is down only from participnts xD. So in his year edition we used newRelic as a way to monitor all the servers and it was very helpful and it saved us many times. But we wanted something that notifies us in discord since all the admins were mostly active there, so I wrote a simple script that when a task is down it will automatically send a message pinging all the admin with information about which task had problems
-
+Last year we had a major problem, we didn't have any way to get notified if a task or the platform is down only from participants xD. So in his year edition, we used newRelic as a way to monitor all the servers and it was very helpful and it saved us many times. But we wanted something that notifies us in discord since all the admins were mostly active there, so I wrote a simple script that when a task is down it will automatically send a message pinging all the admin with information about which task had problems
 the script takes a JSON file with a certain structure for every task and tests the task status depending on the task's category.
 
 the JSON file:
@@ -97,8 +96,8 @@ def check(task):
 
 Then it will use either pwntools or python requests to test the task.
 
-For the web tasks it just sends a GET request and if the status code is 200 it checks the output.
-Now for the services tasks it uses pwntools library and connect to server and if the response has the output in the jason file then everything is ok.
+For the web tasks, it just sends a GET request and if the status code is 200 it checks the output.
+Now for the services tasks, it uses pwntools library and connects to the server and if the response has the output in the JSON file then everything is ok.
 I wanted to include the health check as a functionality in the Discord bot, but unfortunately, I didn't have much time.
 
 # <a name="2"></a> 
@@ -131,8 +130,8 @@ async def on_message(message):
 \
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/flag2.png?raw=true)
 
-For the second task, I found a lot of solutions but the easiest onr for, at least for me, was to use selenium to scrape the data needed for the first blood. 
-The bot at first start with collecting all the tasks names when lunched and storing all the data in an array.
+For the second task, I found a lot of solutions but the easiest one, at least for me, was to use selenium to scrape the data needed for the first blood. 
+The bot at first starts with collecting all the task names when lunched and storing all the data in an array.
 ```python=
 @bot.event
 async def on_ready():
@@ -311,7 +310,7 @@ sg = sendgrid.SendGridAPIClient(api_key="###SENDGRID_API_KEY###")
 The code attache the certificate and fill the placeholders thens end it using sendfrid api the team mail that is stored in an excel sheet
 # <a name="4"></a> 
 ## Conclusion
-I know these are simple scripts but the did a big role in managing the CTF and made it a lot easier than doing all these tasks manually, these script had a lot of issues like for the bot if anything happens the data will be lost and it will starts the first blood from he brggind and also the health check can have a lot of flase alerts s for net year edition we set the goal to combine all these tasks in one bot that it will manage everything from the beginning of the CTF with no human interaction it will be more optimized and it will help us focus more interacting with the participants and doing more challenges.
+I know these are simple scripts but they did a big role in managing the CTF and made it a lot easier than doing all these tasks manually, these scripts had a lot of issues like for the bot if anything happens the data will be lost and it will start the first blood from the begging and also the health check can have a lot of false alerts s for net year edition we set the goal to combine all these tasks in one bot that it will manage everything from the beginning of the CTF with no human interaction it will be more optimized and it will help us focus more interacting with the participants and doing more challenges.
 
 In the next article, we will break down the main infrastructure and all its components and we will talk in detail about all the challenges and problems we faced and the solution we went with.
 
