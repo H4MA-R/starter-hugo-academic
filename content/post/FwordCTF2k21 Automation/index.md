@@ -39,11 +39,9 @@ categories:
   
 
 ## Introduction
-Last August our team organized FwordCTF2k21 and it was a successful eventand we ad a ot of positive feedbakcs.
-In this article, I am going to talk about all the automation scripts we used to insure that everything went accordingly from health checks to interacting with the participants.
+Last August our team organized FwordCTF2k21 and it was a successful event and we had a lot of positive feedbacks. In this article, I am going to talk about all the automation scripts we used to ensure that everything went accordingly from health checks to interacting with the participants.
 
 Note: this article is for documentation purposes and all the links will be below.
-
 
 ### Summury
 
@@ -54,7 +52,7 @@ Note: this article is for documentation purposes and all the links will be below
 
 # <a name="1"></a> 
 ## Tasks-health-check
-Last year we had a major problem, we didn't have any way to get notified if a task or the platform is down only from participants xD. So in his year edition, we used newRelic as a way to monitor all the servers and it was very helpful and it saved us many times. But we wanted something that notifies us in discord since all the admins were mostly active there, so I wrote a simple script that when a task is down it will automatically send a message pinging all the admin with information about which task had problems
+Last year we had a major problem, we didn't have any way to get notified if a task or the platform is down only from participants xD. So in his year edition, we used newRelic as a way to monitor all the servers and it was very helpful and it saved us many times. But we wanted something that notifies us in discord since all the admins were mostly active there, so we wrote a simple script that when a task is down it will automatically send a message pinging all the admin with information about which task had problems
 the script takes a JSON file with a certain structure for every task and tests the task status depending on the task's category.
 
 the JSON file:
@@ -105,7 +103,7 @@ I wanted to include the health check as a functionality in the Discord bot, but 
 \
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/Fbot.png?raw=true)
 
-Now for the discord bot, we wanted it to do two main tasks which are giving the welcome flag to the participants and announcing all the first blood. the first task was pretty much straight forward I just used the discord bot library. the bot has basics commands like help and ping to test the latency and of course the flag command to give the flags for the participants.
+Now for the discord bot, we wanted it to do two main tasks which are giving the welcome flag to the participants and announcing all the first blood. the first task was pretty much straight forward we just used the discord bot library. the bot has basics commands like help and ping to test the latency and of course the flag command to give the flags for the participants.
 ```python=
 @bot.command()
 async def flag(ctx):
@@ -130,7 +128,7 @@ async def on_message(message):
 \
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/flag2.png?raw=true)
 
-For the second task, I found a lot of solutions but the easiest one, at least for me, was to use selenium to scrape the data needed for the first blood. 
+For the second task, we found a lot of solutions but the easiest one, at least for us, was to use selenium to scrape the data needed for the first blood. 
 The bot at first starts with collecting all the task names when lunched and storing all the data in an array.
 ```python=
 @bot.event
@@ -239,9 +237,9 @@ async def firstBlood():
 btw credit to the CSICTF admin for his amazing article it helped me a lot(link below)
 # <a name="3"></a> 
 ## Certificates script
-In this year edition, we had more than 1000 participants and more than 400 teams that made it to the scoreboard so no way we were going to do the certificates manually and send them for the teams so I opted to write a script that generate all the certificates and send them via email to the teams.
+In this year edition, we had more than 2000 participants and more than 1K teams that made it to the scoreboard so no way we were going to do the certificates manually and send them for the teams so we opted to write a script that generate all the certificates and send them via email to the teams.
 
-So to generate the certificates I started with a template done by our talented designer [Aptx](https://twitter.com/MehdiAptx) and I used pillow library in python to put the team name, points, and ranking and the result was a pdf containing the certificate that will be attached to the email.
+So to generate the certificates we started with a template done by our talented designer [Aptx](https://twitter.com/MehdiAptx) and we used pillow library in python to put the team name, points, and ranking and the result was a pdf containing the certificate that will be attached to the email.
 ```python=
 im = Image.open(r'Certificate.png')
 d = ImageDraw.Draw(im)
@@ -272,7 +270,7 @@ im.save("certificate_" + str(i['pos']) +".pdf")
 \
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20Automation/cert2.png?raw=true)
 
-Now for the emails, I opted for Sendgrid because I was most familiar with it and I worked with it before in the FwordCTF first edition
+Now for the emails, we opted for Sendgrid because we were most familiar with it and we worked with it before in the FwordCTF first edition
 
 for those who don't know it Sendgrid is a platform used mainly for email marketing you can customize the emails and use the API key to use it in an automation script.
 
@@ -310,7 +308,7 @@ sg = sendgrid.SendGridAPIClient(api_key="###SENDGRID_API_KEY###")
 The code attache the certificate and fill the placeholders thens end it using sendfrid api the team mail that is stored in an excel sheet
 # <a name="4"></a> 
 ## Conclusion
-I know these are simple scripts but they did a big role in managing the CTF and made it a lot easier than doing all these tasks manually, these scripts had a lot of issues like for the bot if anything happens the data will be lost and it will start the first blood from the begging and also the health check can have a lot of false alerts s for net year edition we set the goal to combine all these tasks in one bot that it will manage everything from the beginning of the CTF with no human interaction it will be more optimized and it will help us focus more interacting with the participants and doing more challenges.
+we know these are simple scripts but they did a big role in managing the CTF and made it a lot easier than doing all these tasks manually, these scripts had a lot of issues like for the bot if anything happens the data will be lost and it will start the first blood from the begging and also the health check can have a lot of false alerts s for net year edition we set the goal to combine all these tasks in one bot that it will manage everything from the beginning of the CTF with no human interaction it will be more optimized and it will help us focus more interacting with the participants and doing more challenges.
 
 In the next article, we will break down the main infrastructure and all its components and we will talk in detail about all the challenges and problems we faced and the solution we went with.
 
