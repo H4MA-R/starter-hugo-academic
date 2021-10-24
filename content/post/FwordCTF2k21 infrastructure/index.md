@@ -88,3 +88,9 @@ now for the servers monitoring as we talked in the previous article we made our 
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_14_21-.png?raw=true)
 New relic is a platform used for monitoring and you can customise ow you sow the dat it was awsome and feutures rich it alerted us when a server had  heavy load or if any problem accured in addition we could always monitor the servers stats like cpu and memory usage:
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-08-28%2009_21_39-New%20Relic%20Navigator%20_%20New%20Relic%20One.png?raw=true)
+
+KAHLA aki al machheil li jetna
+
+NEXT edition M3a baadhna
+
+Conclusion
