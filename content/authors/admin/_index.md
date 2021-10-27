@@ -62,7 +62,7 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
-I am a Computer science and network engineering student at insat, a cybersecurity enthusiast who is hardworking and always willing to learn and I have a wide skill set including:
+I am a Cybersecurity and network engineering student at insat, a cybersecurity enthusiast who is hardworking and always willing to learn and I have a wide skill set including:
 - Specialist in reverse engineering and malware analysis
 - Penetration testing
 - Web/mobile development
