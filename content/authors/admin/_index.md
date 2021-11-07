@@ -69,7 +69,7 @@ I am a Cybersecurity and network engineering student at insat, a cybersecurity e
 - Python development
 - Great at bash/python scripting
 
-I am Currently a CTF Player at [Fwod](https://twitter.com/FwordTeam) which is one of the top 50 teams in the world
+I am Currently a CTF Player at [Fwod](https://www.fword.tech/) which is one of the top 50 teams in the world
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Resume.pdf" "newtab" >}}resume{{< /staticref >}}.
