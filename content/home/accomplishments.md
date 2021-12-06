@@ -6,7 +6,7 @@ item:
   - certificate_url: "https://43f60238-2232-4612-9aac-81bc9da2dd4e.filesusr.com/ugd/acbc49_6517e125dbc34b05b88f847e6c8396d2.pdf"
     date_end: ""
     date_start: 2020-10-07
-    description: Achieved 2st place in CSAW MENA 2021 CTF after 48h long competition
+    description: Achieved 1st place in CSAW MENA 2021 CTF after 48h long competition
     organization: null
     organization_url: null
     title: CSAW CTF MENA 2021 winner (10/2021)
