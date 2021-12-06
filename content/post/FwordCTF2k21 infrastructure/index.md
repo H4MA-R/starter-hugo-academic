@@ -47,6 +47,7 @@ So let's start with some stats about our event. as we mentioned before, in this 
 As you see the traffic was huge and the participants didn't make it easy at all the DDOS attacks were remarkable xD thank god CloudFlare was in the rescue we forgot to take screenshots but we had around 40K threats on Cloudflare stats but as KAHLA said last year in his article:
 "hackers can’t be hacked easily :p" Ahmed Belkahla Sep 22, 2020
 So as I said a lot of users and heavy traffic needed a strong infrastructure to handle all that so will talk in detail about the architecture and the different components and services in it.\
+\
 **Summary**
 -	The main infrastructure
 -	Hosting the tasks
@@ -100,11 +101,11 @@ now for the servers monitoring as we talked about in the previous article we mad
 New Relic is a platform used for monitoring and you can customize how you show the data. It was awesome and features rich it alerted us when a server had a heavy load or if any problem accrued in addition we could always monitor the server stats like CPU and memory usage:
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-08-28%2009_21_39-New%20Relic%20Navigator%20_%20New%20Relic%20One.png?raw=true)
 
-**The problems we faced**
+**The problems we faced**\
 In this year's edition, the infrastructure was pretty much flawless. We had 0 downtime and everything thing went smooth except two pwn tasks that went down for a little while due to a heavy load from the participants but a simply restarted the docker containers and it went well. But the big issue we faced was CTFd. Our mistake was that we used the same theme as last year on an updated version of CTFd and it wasn't compatible so the submit button didn't work for the first couple of hours until we figured out the issue and changed the theme to the default one.
 
-**Our plans for the next edition**
+**Our plans for the next edition**\
 So, next year we plan to use a different platform than CTFd, as it has a lot of problems and it's not the most efficient. Maybe we can develop our platform. for the automation scripts and bot, we plan to make an all-around bot that has all the needed features including tasks health checks and interacting with the participants and maybe also making the deployment of the task more automated so we take less time deploying the tasks and have time to test everything to avoid issues like we faced this edition. and finally, if we can we plan to use Terraform to deploy the old infrastructure.
 
-**Conclusion**
+**Conclusion**\
 Finally, we were happy with the result, it wasn't flawless but it served us well and we got good feedback overall. Working on this project was a nice opportunity to learn more about deployment and cloud technologies. and we hope we can improve our skills to deliver a better result in the next edition.
