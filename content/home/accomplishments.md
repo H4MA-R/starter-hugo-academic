@@ -3,14 +3,14 @@ widget: accomplishments
 active: true
 date_format: Jan 2006
 item:
-  - certificate_url: null
+  - certificate_url: "https://43f60238-2232-4612-9aac-81bc9da2dd4e.filesusr.com/ugd/acbc49_6517e125dbc34b05b88f847e6c8396d2.pdf"
     date_end: ""
     date_start: 2020-10-07
-    description: Achieved 2nd place in CSAW MENA 2020 CTF after 48h long competition
+    description: Achieved 2st place in CSAW MENA 2021 CTF after 48h long competition
     organization: null
     organization_url: null
-    title: 2nd place CSAW MENA 2020 (10/2020)
-    url: ""
+    title: CSAW CTF MENA 2021 winner (10/2021)
+    url: "https://www.csaw.io/ctf"
   - certificate_url: null
     date_end: 2020-12-01
     date_start: 2020-01-01
