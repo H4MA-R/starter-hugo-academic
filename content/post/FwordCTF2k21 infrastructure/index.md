@@ -46,7 +46,7 @@ So let's start with some stats about our event. as we mentioned before, in this 
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/CloudFlare.png?raw=true)
 As you see the traffic was huge and the participants didn't make it easy at all the DDOS attacks were remarkable xD thank god CloudFlare was in the rescue we forgot to take screenshots but we had around 40K threats on Cloudflare stats but as KAHLA said last year in his article:
 "hackers can’t be hacked easily :p" Ahmed Belkahla Sep 22, 2020
-So as I said a lot of users and heavy traffic needed a strong infrastructure to handle all that so will talk in detail about the architecture and the different components and services in it.
+So as I said a lot of users and heavy traffic needed a strong infrastructure to handle all that so will talk in detail about the architecture and the different components and services in it.\
 **Summary**
 -	The main infrastructure
 -	Hosting the tasks
