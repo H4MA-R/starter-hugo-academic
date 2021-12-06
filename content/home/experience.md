@@ -49,9 +49,9 @@ experience:
         * Supervising a network security workshop where we built network attacks tool
         * Supervising a Mobile reverse engineering workshop
 
-  - title: CTF Player
+  - title: Co-Founder and member
     company: Fword
-    company_url: 'https://twitter.com/fwordteam?lang=en'
+    company_url: 'https://www.fword.tech/'
     location: Tunisia
     date_start: '2018-12-12'
     date_end: ''
@@ -65,7 +65,7 @@ experience:
     company_url: 'https://securinets.com/'
     location: Tunisia
     date_start: '2020-09-09'
-    date_end: ''
+    date_end: '2021-06-01'
     description: |2-
         Responsibilities include:
         
