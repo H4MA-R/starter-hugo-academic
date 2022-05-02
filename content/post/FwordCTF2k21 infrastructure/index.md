@@ -73,32 +73,32 @@ Now let's break down each component and why have we gone with that specific opti
 For the cloud platform, we have gone with Microsoft Azure for one and only one reason.\
 ![enter image description here](https://i.imgflip.com/5rkonm.jpg) \
 Microsoft Azure was the only solution because we had the 100$ credit we get as students but we can't deny it was easy to use and it had a lot of useful features.
-For the CTFd instances we initially wanted to go with 4*8GiB servers with 2 replicas in each node (you can read about how we used docker swarm in last year [article](https://ahmed-belkahla.me/post/fwordctf_infrastructure/)) but due to Microsoft Azure for students limitation we only could have a total of 4 virtual cores per account and we needed the CTFd nodes to be in the same account so finally, we opted for 2 16GiB 2 cores servers with 4 replicas in each node and of course we needed Azure LoadBalancer to load the traffic between the two servers.
-For the Redis caching server and the MySQL server we went with 2 core and 8GiB servers to make sure everything went smoothly. 
-Now for the discord bot and automation scripts we went for two 1 vcpu, 3.5 GiB, we know we could run them on our PC's but having a good internet connection was a must and the speeds in the servers were awesome.
+For the CTFd instances we initially wanted to go with 4*8GiB servers with 2 replicas in each node (you can read about how we used docker swarm in last year [article](https://ahmed-belkahla.me/post/fwordctf_infrastructure/)) but due to Microsoft Azure for students limitation we only could have a total of 4 virtual cores per account and we needed the CTFd nodes to be in the same account so finally, we opted for 2 16GiB 2 cores servers with 4 replicas in each node and of course we needed Azure LoadBalancer to load the traffic between the two servers.\
+For the Redis caching server and the MySQL server we went with 2 core and 8GiB servers to make sure everything went smoothly. \
+Now for the discord bot and automation scripts we went for two 1 vcpu, 3.5 GiB, we know we could run them on our PC's but having a good internet connection was a must and the speeds in the servers were awesome.\
 As you noticed at the beginning of the article we used CloudFlre cdn as it is free and easy to use nd it provided a lot of useful statistics and security measurements.
-For the static files storage, we used AWS S3 bucket the same as last year.
-Now for SendGrid, we talked in detail about why we went with it in the automation [article](https://mohamed-arfaoui.me/post/fwordctf2k21-automation/).
+For the static files storage, we used AWS S3 bucket the same as last year.\
+Now for SendGrid, we talked in detail about why we went with it in the automation [article](https://mohamed-arfaoui.me/post/fwordctf2k21-automation/).\
 
 **Hosting the tasks**
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-24%2000_33_04-tasks6%20-%20Microsoft%20Azure.png?raw=true)
 For the tasks we used 6 Azure VMs: Ubuntu Server 20.04 LTS - Gen2 (**Standard E2s v3 - 2 vcpus, 16 GiB memory**), and every tsks was in a separate docker container.
-And for the deployment, we used the same scripts as last year's edition.
+And for the deployment, we used the same scripts as last year's edition.\
 
 **Management and monitoring**
 For the servers management, we used Termius because it's awesome and made our life easier we had separate groups for the tasks servers and the infra servers
-Main group:
+Main group:\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_28-Termius.png?raw=true)
-Sub groups:
+Sub groups:\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_46-Termius.png?raw=true)
-infra:
+infra:\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_55-Termius.png?raw=true)
-tasks:
+tasks:\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_11_08-Termius.png?raw=true)
 
-now for the servers monitoring as we talked about in the previous article we made our custom scripts to alert us if anything goes wrong but to be extra safe we used newRelic
+Now for the servers monitoring as we talked about in the previous article we made our custom scripts to alert us if anything goes wrong but to be extra safe we used newRelic\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_14_21-.png?raw=true)
-New Relic is a platform used for monitoring and you can customize how you show the data. It was awesome and features rich it alerted us when a server had a heavy load or if any problem accrued in addition we could always monitor the server stats like CPU and memory usage:
+New Relic is a platform used for monitoring and you can customize how you show the data. It was awesome and features rich it alerted us when a server had a heavy load or if any problem accrued in addition we could always monitor the server stats like CPU and memory usage:\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-08-28%2009_21_39-New%20Relic%20Navigator%20_%20New%20Relic%20One.png?raw=true)
 
 **The problems we faced**\
