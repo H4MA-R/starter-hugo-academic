@@ -70,8 +70,8 @@ So in the schema above, it shows all the components of Fword CTF infrastructure 
 -	AWS S3 bucket to serve the files to download.
 -	Sendgrid free account (25k free emails): We used Sendgrid for sending the certificates after the CTF.
 Now let's break down each component and why have we gone with that specific option.
-For the cloud platform, we have gone with Microsoft Azure for one and only one reason.
-![enter image description here](https://i.imgflip.com/5rkonm.jpg)
+For the cloud platform, we have gone with Microsoft Azure for one and only one reason.\
+![enter image description here](https://i.imgflip.com/5rkonm.jpg) \
 Microsoft Azure was the only solution because we had the 100$ credit we get as students but we can't deny it was easy to use and it had a lot of useful features.
 For the CTFd instances we initially wanted to go with 4*8GiB servers with 2 replicas in each node (you can read about how we used docker swarm in last year [article](https://ahmed-belkahla.me/post/fwordctf_infrastructure/)) but due to Microsoft Azure for students limitation we only could have a total of 4 virtual cores per account and we needed the CTFd nodes to be in the same account so finally, we opted for 2 16GiB 2 cores servers with 4 replicas in each node and of course we needed Azure LoadBalancer to load the traffic between the two servers.
 For the Redis caching server and the MySQL server we went with 2 core and 8GiB servers to make sure everything went smoothly. 
