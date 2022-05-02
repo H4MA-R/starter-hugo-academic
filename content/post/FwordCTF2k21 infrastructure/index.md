@@ -83,7 +83,7 @@ Now for SendGrid, we talked in detail about why we went with it in the automatio
 **Hosting the tasks**\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-24%2000_33_04-tasks6%20-%20Microsoft%20Azure.png?raw=true)
 For the tasks we used 6 Azure VMs: Ubuntu Server 20.04 LTS - Gen2 (**Standard E2s v3 - 2 vcpus, 16 GiB memory**), and every tsks was in a separate docker container.
-And for the deployment, we used the same scripts as last year's edition.\
+And for the deployment, we used the same scripts as last year's edition.
 
 **Management and monitoring**\
 For the servers management, we used Termius because it's awesome and made our life easier we had separate groups for the tasks servers and the infra servers
@@ -94,7 +94,7 @@ Sub groups:\
 infra:\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_55-Termius.png?raw=true)\
 tasks:\
-![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_11_08-Termius.png?raw=true)\
+![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_11_08-Termius.png?raw=true)
 
 Now for the servers monitoring as we talked about in the previous article we made our custom scripts to alert us if anything goes wrong but to be extra safe we used newRelic\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_14_21-.png?raw=true)
