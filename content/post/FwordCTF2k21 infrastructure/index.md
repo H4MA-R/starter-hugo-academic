@@ -42,8 +42,8 @@ The CTF was awesome, it was an amazing experience, even better than the first ed
 
 So let's start with some stats about our event. as we mentioned before, in this year's edition we had 1925 registered users and 1001 teams 
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/ctfd.png?raw=true)
- In addition to that we had a lot more traffic than the previous year and here are some stats from cloud flare:
-![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/CloudFlare.png?raw=true)
+ In addition to that we had a lot more traffic than the previous year and here are some stats from cloud flare: \
+![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/CloudFlare.png?raw=true) \
 As you see the traffic was huge and the participants didn't make it easy at all the DDOS attacks were remarkable xD thank god CloudFlare was in the rescue we forgot to take screenshots but we had around 40K threats on Cloudflare stats but as KAHLA said last year in his article:
 "hackers can’t be hacked easily :p" Ahmed Belkahla Sep 22, 2020
 So as I said a lot of users and heavy traffic needed a strong infrastructure to handle all that so will talk in detail about the architecture and the different components and services in it.\
@@ -78,23 +78,23 @@ For the Redis caching server and the MySQL server we went with 2 core and 8GiB s
 Now for the discord bot and automation scripts we went for two 1 vcpu, 3.5 GiB, we know we could run them on our PC's but having a good internet connection was a must and the speeds in the servers were awesome.\
 As you noticed at the beginning of the article we used CloudFlre cdn as it is free and easy to use nd it provided a lot of useful statistics and security measurements.
 For the static files storage, we used AWS S3 bucket the same as last year.\
-Now for SendGrid, we talked in detail about why we went with it in the automation [article](https://mohamed-arfaoui.me/post/fwordctf2k21-automation/).\
+Now for SendGrid, we talked in detail about why we went with it in the automation [article](https://mohamed-arfaoui.me/post/fwordctf2k21-automation/). 
 
-**Hosting the tasks**
+**Hosting the tasks**\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-24%2000_33_04-tasks6%20-%20Microsoft%20Azure.png?raw=true)
 For the tasks we used 6 Azure VMs: Ubuntu Server 20.04 LTS - Gen2 (**Standard E2s v3 - 2 vcpus, 16 GiB memory**), and every tsks was in a separate docker container.
 And for the deployment, we used the same scripts as last year's edition.\
 
-**Management and monitoring**
+**Management and monitoring**\
 For the servers management, we used Termius because it's awesome and made our life easier we had separate groups for the tasks servers and the infra servers
 Main group:\
-![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_28-Termius.png?raw=true)
+![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_28-Termius.png?raw=true)\
 Sub groups:\
-![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_46-Termius.png?raw=true)
+![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_46-Termius.png?raw=true)\
 infra:\
-![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_55-Termius.png?raw=true)
+![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_10_55-Termius.png?raw=true)\
 tasks:\
-![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_11_08-Termius.png?raw=true)
+![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_11_08-Termius.png?raw=true)\
 
 Now for the servers monitoring as we talked about in the previous article we made our custom scripts to alert us if anything goes wrong but to be extra safe we used newRelic\
 ![enter image description here](https://github.com/H4MA-R/starter-hugo-academic/blob/master/content/post/FwordCTF2k21%20infrastructure/2021-10-22%2001_14_21-.png?raw=true)
