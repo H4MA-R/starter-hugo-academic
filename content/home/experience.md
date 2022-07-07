@@ -82,7 +82,7 @@ experience:
     description: |2-
         Responsibilities include:
         
-        * Vulnerbility assesment nd bug reports triaging
+        * Vulnerbility assesment and bug reports triaging
         * Managing/supporting the hackers community
         * CTF challneges creation
 ---
