@@ -45,7 +45,7 @@ experience:
         Responsibilities include:
         
         * Participating in CTF organization including task making
-        * and setting up the infrastructure for the CTFs
+        * Setting up the infrastructure for the CTFs
         * Supervising a network security workshop where we built network attacks tool
         * Supervising a Mobile reverse engineering workshop
 
@@ -82,7 +82,7 @@ experience:
     description: |2-
         Responsibilities include:
         
-        * Vulnerbility assesment and bug reports triaging
+        * Vulnerability assesment and bug reports triaging
         * Managing/supporting the hackers community
         * CyberSecurity content creation
 ---
