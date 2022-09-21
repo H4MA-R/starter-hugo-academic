@@ -62,14 +62,12 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
-I am a Cybersecurity and network engineering student at insat, a cybersecurity enthusiast who is hardworking and always willing to learn and I have a wide skill set including:
+I'm Arfaoui Mohamed, a Cyber Security engineer, graduated from the National Institute of applied science and technology in Tunisia. I am currently a Cyber Security Specialist At Yogosha. I have won multiple Cyber Security contests including the MENA CSAW CTF 2022, I have a passion for Cyber Security, IT, and Web development, and I enjoy CTF challenges(Capture The Flag contests). I am an enthusiastic and hardworking individual and always willing to learn and I have a wide skill set including:
 - Specialist in reverse engineering and malware analysis
 - Penetration testing
-- Web/mobile development
+- Vulnerability assessment
+- Web development
 - Python development
-- Great at bash/python scripting
-
-I am Currently a CTF Player at [Fwod](https://www.fword.tech/) which is one of the top 50 teams in the world
 
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Resume.pdf" "newtab" >}}resume{{< /staticref >}}.
