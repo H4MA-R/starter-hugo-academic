@@ -73,7 +73,7 @@ experience:
         * Managing Securinets social media including a Facebook page with more than 13K followers
         * Publishing Cyber Security news articles
 
-  - title: CyberSecurity specialist intern
+  - title: CyberSecurity specialist
     company: Yogosha
     company_url: '[Yogosha](https://yogosha.com/)'
     location: Paris, France
@@ -84,5 +84,5 @@ experience:
         
         * Vulnerbility assesment and bug reports triaging
         * Managing/supporting the hackers community
-        * CTF challneges creation
+        * CyberSecurity content creation
 ---
