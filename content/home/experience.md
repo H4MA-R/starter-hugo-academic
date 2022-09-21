@@ -82,7 +82,7 @@ experience:
     description: |2-
         Responsibilities include:
         
-        * Vulnerability assesment and bug reports triaging
+        * Vulnerability assessment and bug reports triaging
         * Managing/supporting the hackers community
         * CyberSecurity content creation
 ---
