@@ -6,7 +6,7 @@ title: Mohamed Arfaoui
 superuser: true
 
 # Role/position/tagline
-role: Cyber Security Engineer | CyberSecurity Specialsit @ YOGOSHA
+role: Cyber Security Engineer | CyberSecurity Specialsit [@YOGOSHA](https://yogosha.com/)
 
 # Organizations/Affiliations to show in About widget
 organizations:
