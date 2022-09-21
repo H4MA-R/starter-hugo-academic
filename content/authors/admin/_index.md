@@ -6,7 +6,7 @@ title: Mohamed Arfaoui
 superuser: true
 
 # Role/position/tagline
-role: Information Security Engineer/Developer
+role: Cyber Security Engineer | CyberSecurity Specialsit @ YOGOSHA
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -29,7 +29,7 @@ education:
   courses:
   - course: Computer Science & Networks engineering
     institution: National institute of applied science and technology
-    year: 2023
+    year: 2022
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
