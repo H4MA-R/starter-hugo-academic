@@ -40,7 +40,7 @@ experience:
     company_url: 'https://securinets.com/'
     location: Tunisia
     date_start: '2019-09-09'
-    date_end: ''
+    date_end: '2022-01-30'
     description: |2-
         Responsibilities include:
         
