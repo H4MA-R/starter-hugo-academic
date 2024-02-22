@@ -82,7 +82,10 @@ experience:
     description: |2-
         Responsibilities include:
         
-        * Vulnerability assessment and bug reports triaging
-        * Managing/supporting the hackers community
-        * CyberSecurity content creation
+        * Penetration testing for Yogosh's clients(Web and mobile).
+        * Vulnerability assessment and Reviewing and reproducing incoming vulnerability reports for both the Yogosha program and clients.
+        * Product security and internal penetration testing.
+        * Contributing to internal security projects and tools as needed.
+        * Managing/supporting the hackers' community by facilitating clear communication between our community and customers.
+        * CyberSecurity content creation (CTF challenges, Articles...).
 ---
