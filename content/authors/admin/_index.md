@@ -18,6 +18,9 @@ bio: A cybersecurity enthusiast specialist in reverse engineering and malware an
 
 # Interests to show in About widget
 interests:
+- Penetration Testing
+- Vulnerability Assessment
+- Security Automation
 - Reverse Engineering
 - Penetration testing
 - IT
@@ -62,12 +65,9 @@ email: ""
 # Highlight the author in author lists? (true/false)
 highlight_name: false
 ---
-I'm Arfaoui Mohamed, a Cyber Security engineer, graduated from the National Institute of applied science and technology in Tunisia. I am currently a Cyber Security Specialist At Yogosha. I have won multiple Cyber Security contests including the MENA CSAW CTF 2022, I have a passion for Cyber Security, IT, and Web development, and I enjoy CTF challenges(Capture The Flag contests). I am an enthusiastic and hardworking individual and always willing to learn and I have a wide skill set including:
+I'm Arfaoui Mohamed, a Cyber Security engineer, graduated from the National Institute of applied science and technology in Tunisia. I am currently a Cyber Security Specialist At Yogosha. I have won multiple Cyber Security contests including the MENA CSAW CTF 2022, I have a passion for Cyber Security and IT, and I enjoy CTF challenges(Capture The Flag contests). I am an enthusiastic and hardworking individual and always willing to learn and I have a wide skill set including:
 - Specialist in reverse engineering and malware analysis
 - Penetration testing
 - Vulnerability assessment
 - Web development
 - Python development
-
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/Resume.pdf" "newtab" >}}resume{{< /staticref >}}.
